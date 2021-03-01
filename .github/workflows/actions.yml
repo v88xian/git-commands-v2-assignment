@@ -4,6 +4,10 @@ on:
     branches: 
         - develop 
         - feature/git_add_wildcard 
+  pull_request:
+      branches: 
+        - master
+        - develop        
 jobs:
   build:
     name: Build simple project
