@@ -1,0 +1,24 @@
+name: Github Actions Example
+on:
+  push:
+    branches: 
+        - develop 
+        - feature/git_add_wildcard 
+jobs:
+  build:
+    name: Build simple project
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v2
+    - name: Use Node.js 
+      uses: actions/setup-node@v1
+    - name: Install dependencies
+      run: npm install
+    - name: Test project
+      run: npm test
+
+pull_request:
+  branches: 
+    - master
+    - develop
