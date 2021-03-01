@@ -10,28 +10,28 @@ class GitCommand {
     }
 
     //Command: git status
-    // status(){       
-    //     /*
-    //         For assignment #1:
-    //         Create logic here and run unit testing.
-    //     */
-    //     let modified_files = this.working_directory.new_changes;
-    //     let git_status_message = ""; 
+    status(){       
+        /*
+            For assignment #1:
+            Create logic here and run unit testing.
+        */
+        // let modified_files = this.working_directory.new_changes;
+        // let git_status_message = ""; 
 
-    //     if(Object.keys(modified_files).length > 0){
-    //         git_status_message += `You have ${Object.keys(modified_files).length} change/s.`;
+        // if(Object.keys(modified_files).length > 0){
+        //     git_status_message += `You have ${Object.keys(modified_files).length} change/s.`;
 
-    //         for(let file_key of Object.keys(modified_files)) {
-    //             git_status_message += `\n${file_key}`;
-    //         }
+        //     for(let file_key of Object.keys(modified_files)) {
+        //         git_status_message += `\n${file_key}`;
+        //     }
 
-    //         return git_status_message;
-    //     }
-    //     else{
-    //         git_status_message = `You have 0 change/s.\n`;
-    //         return git_status_message;
-    //     }
-    // }
+        //     return git_status_message;
+        // }
+        // else{
+        //     git_status_message = `You have 0 change/s.\n`;
+        //     return git_status_message;
+        // }
+    }
 
     //Command: git add <filename/file directory/wildcard> 
     add(path_file){
