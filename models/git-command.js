@@ -44,6 +44,19 @@ class GitCommand {
         /*
             Create logic here and run unit testing.
         */
+        else if(path_file === "*"){
+            if(Object.keys(modified_files).length > 0){
+                for(let path_file of Object.keys(modified_files)) {
+                    if(path_file[0] !== "."){
+                        this.staging.push(path_file);
+                        delete modified_files[path_file];
+                    }
+                }
+            }
+            else{
+                return `No file changes.`;
+            }
+        }                  
         else if(path_file === "."){
 
             if(Object.keys(modified_files).length > 0){
